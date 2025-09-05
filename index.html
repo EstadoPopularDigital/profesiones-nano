@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado Popular Digital</title>
+    <style>
+        :root {
+            --primary: #1a5fb4;
+            --secondary: #c64600;
+            --accent: #26a269;
+            --dark: #1c1c1c;
+            --light: #f6f5f4;
+            --text: #241f31;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.25rem;
+            color: var(--accent);
+        }
+
+        .logo p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            flex: 1;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 3rem 0;
+        }
+
+        .bg-light {
+            background: white;
+        }
+
+        .content-section h2 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .content h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Estado Popular Digital</h1>
+                    <p>Manifiesto · Catecismos · Flujos · Memoria</p>
+                </div>
+                <nav>
+                    <a href="#manifesto">Manifiesto</a>
+                    <a href="#catechisms">Catecismos</a>
+                    <a href="#flows">Flujos</a>
+                    <a href="#memory">Memoria</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Construyendo soberanía digital popular</h2>
+            <p>Un espacio para la acción colectiva y transformadora desde las bases</p>
+        </div>
+    </section>
+
+    <section id="manifesto" class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📜 Manifiesto</h2>
+            </div>
+            <div class="content">
+                <h3>Nuestros Principios Fundamentales</h3>
+                <p>El Estado Popular Digital se fundamenta en la soberanía tecnológica, la organización colectiva y la transformación social desde las bases.</p>
+                <p>Creemos en un internet del pueblo, para el pueblo y por el pueblo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="catechisms" class="content-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>📖 Catecismos</h2>
+            </div>
+            <div class="content">
+                <h3>Preguntas y Respuestas Fundamentales</h3>
+                <p>¿Qué es la soberanía digital popular?</p>
+                <p>¿Cómo nos organizamos colectivamente?</p>
+                <p>¿Qué herramientas utilizamos?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="flows" class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔄 Flujos Replicables</h2>
+            </div>
+            <div class="content">
+                <h3>Metodologías de Acción Colectiva</h3>
+                <p>Procesos probados para la organización popular</p>
+                <p>Herramientas digitales de código abierto</p>
+                <p>Estrategias de comunicación alternativa</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="memory" class="content-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>🧠 Memoria Viva</h2>
+            </div>
+            <div class="content">
+                <h3>Archivo Colectivo del Movimiento</h3>
+                <p>Documentación de nuestras luchas</p>
+                <p>Lecciones aprendidas</p>
+                <p>Testimonios y experiencias</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><strong>Estado Popular Digital</strong> · 2025</p>
+            <p>Construido con 🧡 desde las bases populares</p>
+        </div>
+    </footer>
+</body>
+</html>
